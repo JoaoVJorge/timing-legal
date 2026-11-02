@@ -96,7 +96,7 @@ footer {
 <header>
   <p class="app">Timing</p>
   <h1>Política de Privacidade</h1>
-  <p class="effective">Em vigor desde 17 de setembro de 2026</p>
+  <p class="effective">Em vigor desde 1 de novembro de 2026</p>
   <ul class="lang">
     <li><a href="#pt-BR">Português</a></li>
     <li><a href="#en-US">English</a></li>
@@ -106,47 +106,67 @@ footer {
 
 <section id="pt-BR">
 <p>O Timing é um aplicativo de foco, planejamento, acompanhamento de metas e progresso compartilhado. Esta Política de Privacidade explica quais informações o Timing processa, por que são processadas e quais escolhas estão disponíveis para quem usa o app.</p>
+<p>O responsável pelo tratamento das informações é João Victor Jorge Almeida Benevides, desenvolvedor do Timing. Contato: <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
 
 <h2>Informações que processamos</h2>
 <p>Dependendo dos recursos que você usa, o Timing pode processar:</p>
 <ul>
-  <li>Informações da conta fornecidas pelo login com o Google, incluindo nome, endereço de e-mail, identificador da conta Google e imagem de perfil.</li>
-  <li>Informações de perfil que você escolher adicionar, como apelido, telefone, data de nascimento, foto de perfil, avatar, idioma e preferências de aparência.</li>
+  <li>Informações da conta: o e-mail usado para entrar com um código enviado por e-mail ou, no login com o Google, nome, e-mail, identificador da conta Google e imagem de perfil. Você também pode vincular uma conta Apple ao seu perfil.</li>
+  <li>Informações de perfil que você escolher adicionar, como apelido, telefone, data de nascimento, foto de perfil, avatar, idioma e preferências de aparência. Telefone e data de nascimento ficam visíveis só para você.</li>
   <li>Conteúdo que você cria no app, incluindo matérias, metas, tarefas, agendas, anotações, registros de sessões de foco, progresso de leitura e progresso de conquistas.</li>
-  <li>Informações sociais e de grupo, incluindo amizades, convites, participação em grupos, progresso do grupo e imagens que você compartilha intencionalmente em um grupo.</li>
+  <li>Informações sociais e de grupo, incluindo amizades, convites, pedidos de entrada, participação em grupos, progresso do grupo e imagens que você compartilha intencionalmente em um grupo.</li>
+  <li>Estado de presença: se você está online, quando foi visto pela última vez e a categoria de foco em andamento (estudo, exercícios, leitura ou hobbies).</li>
   <li>Preferências de notificação e de bloqueio de foco guardadas para o funcionamento do app.</li>
   <li>Informações técnicas necessárias para autenticar sua conta, sincronizar dados e manter o serviço seguro.</li>
 </ul>
-<p>O Timing não vende informações pessoais e não exibe publicidade de terceiros.</p>
+<p>O Timing não vende informações pessoais, não exibe publicidade e não usa SDKs de publicidade, análise de uso ou relatório de falhas de terceiros.</p>
+
+<h2>Google Agenda (opcional)</h2>
+<p>Se você tocar em <strong>Conectar</strong> na tela da agenda, o Timing pede ao Google autorização para:</p>
+<ul>
+  <li>criar, atualizar e excluir, no seu calendário principal, os eventos criados pelo Timing (permissão <code>calendar.events.owned</code>);</li>
+  <li>ler o identificador e o fuso horário desse calendário (permissão <code>calendar.calendars.readonly</code>).</li>
+</ul>
+<p>Para cada horário da sua agenda, o Timing envia ao Google o título, as datas e horários, a recorrência semanal e uma descrição fixa. O app não lê, importa nem modifica eventos que você criou por outros meios, e não lê o conteúdo do seu calendário além do necessário para manter os próprios eventos.</p>
+<p>O token de acesso offline fornecido pelo Google é guardado criptografado em nossos servidores e usado somente para sincronizar a sua agenda. Ele nunca é enviado ao aplicativo. Ao tocar em <strong>Desconectar</strong>, ou ao excluir a conta, o acesso é revogado no Google e o token é apagado. Os eventos já criados permanecem no seu Google Agenda; você pode removê-los lá. Você também pode revogar o acesso a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<p>O uso e a transferência, para qualquer outro aplicativo, de informações recebidas das APIs do Google pelo Timing seguirão a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado. Esses dados não são vendidos, não são usados para publicidade nem para treinar modelos de inteligência artificial, e não são lidos por pessoas, exceto com seu consentimento, por segurança ou por exigência legal.</p>
 
 <h2>Como as informações são usadas</h2>
 <p>Usamos as informações para:</p>
 <ul>
   <li>Criar e administrar sua conta.</li>
-  <li>Sincronizar seu perfil, planos, metas, progresso e recursos sociais entre as sessões.</li>
+  <li>Sincronizar seu perfil, planos, metas, progresso e recursos sociais entre as sessões e dispositivos.</li>
   <li>Oferecer cronômetros de foco, lembretes, agendas, relatórios de progresso, conquistas, grupos e recursos de amizade.</li>
   <li>Exibir as informações que você escolhe compartilhar com amigos ou participantes de grupos.</li>
   <li>Manter a segurança, prevenir abusos, diagnosticar falhas e dar suporte a quem usa o app.</li>
 </ul>
+<p>As bases legais são a execução do serviço que você solicitou, o seu consentimento (por exemplo, ao conectar o Google Agenda ou escolher uma foto) e o nosso legítimo interesse em manter o serviço seguro.</p>
 
 <h2>Prestadores de serviço</h2>
-<p>O Timing usa o Google para autenticação da conta e o Supabase para autenticação, armazenamento em banco de dados e sincronização. Esses prestadores processam as informações apenas no necessário para fornecer seus serviços e são regidos pelos próprios termos de privacidade.</p>
+<p>O Timing usa o Google para login e, se você conectar, para o Google Agenda, e o Supabase para autenticação, banco de dados, funções de servidor e sincronização. Esses prestadores processam as informações apenas no necessário para fornecer seus serviços e são regidos pelos próprios termos de privacidade.</p>
+
+<h2>Armazenamento no dispositivo</h2>
+<p>O app guarda no aparelho uma cópia dos seus dados para funcionar sem internet. Essa cópia é criptografada, e a chave e a sessão de login ficam no armazenamento seguro do sistema (Keychain no iOS, Keystore no Android). O backup automático do Android está desativado para o app.</p>
 
 <h2>Acesso a fotos e à câmera</h2>
-<p>O acesso à câmera ou à galeria de fotos é solicitado somente quando você escolhe adicionar uma foto de perfil ou compartilhar uma imagem em um grupo. O Timing não acessa fotos em segundo plano. As imagens que você escolher podem ser armazenadas junto à sua conta ou ao conteúdo do grupo para que o recurso selecionado funcione.</p>
+<p>O acesso à câmera ou à galeria de fotos é solicitado somente quando você escolhe adicionar uma foto de perfil ou compartilhar uma imagem em um grupo. O Timing não acessa fotos em segundo plano. As imagens que você escolher são armazenadas junto à sua conta ou ao conteúdo do grupo para que o recurso selecionado funcione.</p>
 
-<h2>Notificações</h2>
-<p>O Timing pode solicitar permissão de notificação para mostrar notificações do cronômetro de foco e de lembretes. As preferências de notificação podem ser alteradas no app ou nas configurações do Android.</p>
+<h2>Notificações e permissões</h2>
+<p>O Timing pode solicitar permissão de notificação para mostrar o cronômetro de foco em andamento e os lembretes. No Android, usa um serviço em primeiro plano e alarmes exatos para manter o cronômetro e os lembretes funcionando com o app fechado; no iOS, usa Atividades ao Vivo e um widget. As preferências podem ser alteradas no app ou nas configurações do sistema.</p>
 
 <h2>Compartilhamento com outras pessoas</h2>
-<p>Quando você usa amigos ou grupos, os outros participantes podem ver as informações necessárias para esses recursos, como seu nome de exibição, avatar ou foto de perfil, o progresso pertinente e o conteúdo que você compartilha intencionalmente. Não compartilhe informações que você não queira que os outros participantes vejam.</p>
+<p>Quando você usa amigos ou grupos, os outros participantes podem ver as informações necessárias para esses recursos, como seu nome de exibição, avatar ou foto de perfil, se você está online ou em foco, a pontuação agregada no ranking do grupo e o conteúdo que você compartilha intencionalmente. Seu histórico individual de atividades não é exibido a outras pessoas. Não compartilhe informações que você não queira que os outros participantes vejam.</p>
 
 <h2>Retenção e exclusão de dados</h2>
-<p>As informações são mantidas enquanto sua conta estiver ativa e pelo tempo necessário para fornecer o serviço, cumprir obrigações legais, resolver disputas e proteger o serviço. Você pode solicitar a exclusão da sua conta Timing e dos dados pessoais associados seguindo as <a href="delete-account.html">instruções de exclusão de conta</a> publicadas para o app ou entrando em contato por <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
-<p>Algumas informações podem permanecer por um período limitado em backups criptografados ou quando a retenção for exigida por segurança, prevenção a fraudes ou cumprimento legal. Conteúdo compartilhado com outras pessoas pode continuar visível quando a remoção afetaria os registros delas ou quando elas o salvaram de forma independente.</p>
+<p>As informações são mantidas enquanto sua conta estiver ativa. Convites e pedidos já respondidos são removidos automaticamente após cerca de 30 dias.</p>
+<p>Você pode excluir a conta e os dados associados diretamente no app, na tela de edição do perfil, em <strong>Excluir conta</strong>. A exclusão é imediata e permanente. Também é possível pedir a exclusão pelas <a href="delete-account.html">instruções de exclusão de conta</a> ou por e-mail para <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
+<p>Algumas informações podem permanecer por um período limitado em backups criptografados do provedor ou quando a retenção for exigida por segurança, prevenção a fraudes ou cumprimento legal. Conteúdo que outras pessoas já viram ou salvaram de forma independente pode continuar com elas.</p>
+
+<h2>Seus direitos</h2>
+<p>Conforme a Lei Geral de Proteção de Dados (LGPD) e, quando aplicável, outras leis como o GDPR, você pode pedir confirmação do tratamento, acesso, correção, portabilidade, anonimização ou exclusão dos seus dados, revogar consentimentos e se opor a um tratamento. Muitas dessas ações você faz no próprio app (editar o perfil, desconectar o Google Agenda, excluir a conta). Para as demais, escreva para <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
 
 <h2>Segurança</h2>
-<p>O Timing usa conexões de rede criptografadas e controles de acesso destinados a proteger as informações. Nenhum método de armazenamento ou transmissão é completamente seguro, portanto não é possível garantir segurança absoluta.</p>
+<p>O Timing usa conexões de rede criptografadas, controle de acesso por conta em todo o banco de dados e armazenamento seguro de credenciais no dispositivo. Nenhum método de armazenamento ou transmissão é completamente seguro, portanto não é possível garantir segurança absoluta.</p>
 
 <h2>Crianças</h2>
 <p>O Timing não é dirigido a crianças menores de 13 anos. Se soubermos que informações pessoais de uma criança menor de 13 anos foram coletadas sem a autorização adequada, tomaremos medidas razoáveis para excluí-las.</p>
@@ -158,55 +178,75 @@ footer {
 <p>Esta política pode ser atualizada conforme o Timing muda. A data de vigência acima será atualizada quando houver alterações relevantes.</p>
 
 <h2>Contato</h2>
-<p>Para dúvidas de privacidade ou pedidos de exclusão de conta, entre em contato por <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
+<p>Para dúvidas de privacidade, exercício de direitos ou pedidos de exclusão de conta, entre em contato por <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
 </section>
 
 <section class="section" id="en-US" lang="en">
 <h1>Timing Privacy Policy</h1>
-<p class="effective">Effective date: September 17, 2026</p>
+<p class="effective">Effective date: November 1, 2026</p>
 
 <p>Timing is a focus, planning, goal-tracking, and shared-progress application. This Privacy Policy explains what information Timing processes, why it is processed, and the choices available to users.</p>
+<p>The controller of this information is João Victor Jorge Almeida Benevides, the developer of Timing. Contact: <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
 
 <h2>Information we process</h2>
 <p>Depending on the features you use, Timing may process:</p>
 <ul>
-  <li>Account information provided through Google sign-in, including your name, email address, Google account identifier, and profile image.</li>
-  <li>Profile information you choose to add, such as a nickname, phone number, date of birth, profile photo, avatar, language, and appearance preferences.</li>
+  <li>Account information: the email address you use to sign in with an emailed code or, with Google sign-in, your name, email address, Google account identifier, and profile image. You may also link an Apple account to your profile.</li>
+  <li>Profile information you choose to add, such as a nickname, phone number, date of birth, profile photo, avatar, language, and appearance preferences. Phone number and date of birth are visible only to you.</li>
   <li>Content you create in the app, including subjects, goals, tasks, schedules, notes, focus-session records, reading progress, and achievement progress.</li>
-  <li>Social and group information, including friend relationships, invitations, group memberships, group progress, and images you intentionally share in a group.</li>
+  <li>Social and group information, including friend relationships, invitations, join requests, group memberships, group progress, and images you intentionally share in a group.</li>
+  <li>Presence status: whether you are online, when you were last seen, and the focus category currently in progress (studying, exercises, reading, or hobbies).</li>
   <li>Notification and focus-lock preferences stored for app functionality.</li>
   <li>Technical information required to authenticate your account, synchronize data, and keep the service secure.</li>
 </ul>
-<p>Timing does not sell personal information and does not display third-party advertising.</p>
+<p>Timing does not sell personal information, does not display advertising, and does not use third-party advertising, usage-analytics, or crash-reporting SDKs.</p>
+
+<h2>Google Calendar (optional)</h2>
+<p>If you tap <strong>Connect</strong> on the schedule screen, Timing asks Google for permission to:</p>
+<ul>
+  <li>create, update, and delete the events Timing created on your primary calendar (the <code>calendar.events.owned</code> permission);</li>
+  <li>read the identifier and time zone of that calendar (the <code>calendar.calendars.readonly</code> permission).</li>
+</ul>
+<p>For each item in your schedule, Timing sends Google its title, dates and times, weekly recurrence, and a fixed description. The app does not read, import, or modify events you created in other ways, and does not read your calendar's content beyond what is needed to maintain its own events.</p>
+<p>The offline-access token issued by Google is stored encrypted on our servers and used only to synchronize your schedule. It is never sent to the app. When you tap <strong>Disconnect</strong>, or delete your account, access is revoked at Google and the token is erased. Events already created remain in your Google Calendar; you can remove them there. You can also revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+<p>Timing's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. This data is not sold, not used for advertising or to train AI models, and not read by humans except with your consent, for security purposes, or to comply with law.</p>
 
 <h2>How information is used</h2>
 <p>We use information to:</p>
 <ul>
   <li>Create and manage your account.</li>
-  <li>Synchronize your profile, plans, goals, progress, and social features across sessions.</li>
+  <li>Synchronize your profile, plans, goals, progress, and social features across sessions and devices.</li>
   <li>Provide focus timers, reminders, schedules, progress reports, achievements, groups, and friend features.</li>
   <li>Display information you choose to share with friends or group members.</li>
   <li>Maintain security, prevent abuse, diagnose failures, and support users.</li>
 </ul>
+<p>Our legal bases are performing the service you requested, your consent (for example, when you connect Google Calendar or choose a photo), and our legitimate interest in keeping the service secure.</p>
 
 <h2>Service providers</h2>
-<p>Timing uses Google for account authentication and Supabase for authentication, database storage, and synchronization. These providers process information only as needed to provide their services and are governed by their own privacy terms.</p>
+<p>Timing uses Google for sign-in and, if you connect it, Google Calendar, and Supabase for authentication, database storage, server functions, and synchronization. These providers process information only as needed to provide their services and are governed by their own privacy terms.</p>
+
+<h2>Storage on your device</h2>
+<p>The app keeps a copy of your data on the device so it works offline. That copy is encrypted, and the key and your sign-in session are kept in the system's secure storage (Keychain on iOS, Keystore on Android). Android automatic backup is turned off for the app.</p>
 
 <h2>Photos and camera access</h2>
-<p>Camera or photo-library access is requested only when you choose to add a profile photo or share an image in a group. Timing does not access photos in the background. Images you choose may be stored with your account or group content so the selected feature can work.</p>
+<p>Camera or photo-library access is requested only when you choose to add a profile photo or share an image in a group. Timing does not access photos in the background. Images you choose are stored with your account or group content so the selected feature can work.</p>
 
-<h2>Notifications</h2>
-<p>Timing may request notification permission to show focus-timer and reminder notifications. Notification preferences can be changed in the app or in Android settings.</p>
+<h2>Notifications and permissions</h2>
+<p>Timing may request notification permission to show the running focus timer and reminders. On Android it uses a foreground service and exact alarms to keep the timer and reminders working when the app is closed; on iOS it uses Live Activities and a widget. Preferences can be changed in the app or in system settings.</p>
 
 <h2>Sharing with other users</h2>
-<p>When you use friends or groups, other participants may see information needed for those features, such as your display name, avatar or profile photo, relevant progress, and content you intentionally share. Do not share information that you do not want other participants to see.</p>
+<p>When you use friends or groups, other participants may see information needed for those features, such as your display name, avatar or profile photo, whether you are online or focusing, your aggregate score on the group ranking, and content you intentionally share. Your individual activity history is not shown to other people. Do not share information that you do not want other participants to see.</p>
 
 <h2>Data retention and deletion</h2>
-<p>Information is retained while your account is active and as needed to provide the service, comply with legal obligations, resolve disputes, and protect the service. You may request deletion of your Timing account and associated personal data by following the <a href="delete-account.html">account-deletion instructions</a> published for the app or by contacting <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
-<p>Some information may remain for a limited period in encrypted backups or where retention is required for security, fraud prevention, or legal compliance. Content shared with other users may remain visible where removal would affect their records or where it has been independently saved by them.</p>
+<p>Information is retained while your account is active. Answered invitations and requests are removed automatically after about 30 days.</p>
+<p>You can delete your account and associated data directly in the app, on the profile editing screen, under <strong>Delete account</strong>. Deletion is immediate and permanent. You can also request deletion through the <a href="delete-account.html">account-deletion instructions</a> or by emailing <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
+<p>Some information may remain for a limited period in the provider's encrypted backups or where retention is required for security, fraud prevention, or legal compliance. Content other people have already seen or independently saved may remain with them.</p>
+
+<h2>Your rights</h2>
+<p>Under Brazil's General Data Protection Law (LGPD) and, where applicable, other laws such as the GDPR, you may request confirmation of processing, access, correction, portability, anonymization, or deletion of your data, withdraw consent, and object to processing. You can do many of these in the app itself (edit your profile, disconnect Google Calendar, delete your account). For the rest, write to <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>. You may also lodge a complaint with your data-protection authority.</p>
 
 <h2>Security</h2>
-<p>Timing uses encrypted network connections and access controls intended to protect information. No method of storage or transmission is completely secure, so absolute security cannot be guaranteed.</p>
+<p>Timing uses encrypted network connections, per-account access control across the database, and secure credential storage on the device. No method of storage or transmission is completely secure, so absolute security cannot be guaranteed.</p>
 
 <h2>Children</h2>
 <p>Timing is not directed to children under 13. If we learn that personal information from a child under 13 was collected without appropriate authorization, we will take reasonable steps to delete it.</p>
@@ -218,7 +258,7 @@ footer {
 <p>This policy may be updated as Timing changes. The effective date above will be updated when material changes are made.</p>
 
 <h2>Contact</h2>
-<p>For privacy questions or account-deletion requests, contact <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
+<p>For privacy questions, rights requests, or account-deletion requests, contact <a href="mailto:joaovictorjorgealmeidabenevide@gmail.com">joaovictorjorgealmeidabenevide@gmail.com</a>.</p>
 </section>
 
 <footer>
